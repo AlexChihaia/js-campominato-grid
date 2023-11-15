@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* COMMON */
+.d-flex {
+    display: flex;
+}
+
+body {
+    height: 100vh;
+    flex-direction: column;
+}
+
+header {
+    justify-content: space-between;
+}
+
+header,
+footer {
+    background-color: blanchedalmond;
+    padding: 20px;
+}
+
+main {
+    flex-grow: 1;
+    background-color: cadetblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#board {
+    background-color: darkgoldenrod;
+    height: 600px;
+    width: 600px;
+    flex-wrap: wrap;
+}
+
+.cell {
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+    background-color: azure;
+}
+
+.clicked {
+    background-color: aqua;
+}
+
+
+
+
+
+
+
+
+
+/* HEADER */
+
+
+
+
+
+
+
+/* MAIN */
+
+
+
+
+/* FOOTER */
