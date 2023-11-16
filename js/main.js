@@ -1,10 +1,37 @@
 'use strict';
 
 
+
+
+
+function selectLevel() {
+    let select = document.getElementById('livello-difficolta');
+    let value = select.options[select.selectedIndex].value;
+
+    switch (value) {
+        case '1':
+            console.log('Easy');
+            break;
+        case '2':
+            console.log('Medium');
+            break;
+        case '3':
+            console.log('Hard');
+            break;
+        default:
+            console.log('Easy');
+    }
+}
+
+
+
+
 const startButton = document.getElementById('start-button');
 
 startButton.addEventListener('click', function () {
+    selectLevel();
     startGame();
+
 });
 
 
@@ -31,4 +58,4 @@ function createCell(i) {
 function selectCell(cell) {
     cell.classList.add('clicked');
     console.log('Hai selezionato la cella numero:', cell.innerHTML);
-}
+} 
